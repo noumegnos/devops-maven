@@ -1,0 +1,46 @@
+package groupid.artiid;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+//Assignment 3: Unit testing
+//this is an example app that simulates fetching a list of facebook friends
+//there is a small text file which the app reads and prints out in the console
+//the objective is to write a series of positive and negative unit tests
+
+
+public class App 
+{
+	
+	static File file;
+	
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+    
+    public static String sayHi(String[] args) {
+    	
+    	return "Hi";
+    }
+    
+    public static File FindFriendFile() throws Exception {
+        file = new File("\friendlist.txt");
+        
+        return file;
+    }
+    
+    public static String[] ScanFriendFile(File scanMe) throws FileNotFoundException {
+        Scanner sc = new Scanner(scanMe);
+        
+        String[] names = new String[(int) scanMe.length()];
+        
+        while (sc.hasNextLine())
+          System.out.println(sc.nextLine());
+        
+        sc.close();
+        
+        return names;
+    }
+}

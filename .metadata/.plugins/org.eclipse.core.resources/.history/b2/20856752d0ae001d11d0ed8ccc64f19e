@@ -1,0 +1,71 @@
+package groupid.artiid;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+//Assignment 3: Unit testing
+//this is an example app that simulates fetching a list of facebook friends
+//there is a small text file which the app reads and prints out in the console
+//the objective is to write a series of positive and negative unit tests
+
+
+public class App 
+{
+	
+	//static File file;
+	
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+    
+    public static String sayHi(String[] args) {
+    	
+        System.out.println( "Hi" );
+        
+    	return "Hi";
+    }
+    
+    public static File FindFriendFile() throws Exception {
+        //file = new File("friendlist.txt");
+        
+        File myObj = new File("./src/main/java/groupid/artiid//friendlist.txt");
+        
+//        if (myObj.exists()) {
+//          System.out.println("File name: " + myObj.getName());
+//          System.out.println("Absolute path: " + myObj.getAbsolutePath());
+//          System.out.println("Writeable: " + myObj.canWrite());
+//          System.out.println("Readable " + myObj.canRead());
+//          System.out.println("File size in bytes " + myObj.length());
+//        } else {
+//          System.out.println("The file does not exist.");
+//        }
+        //System.out.println(file.);
+        
+        return myObj;
+    }
+    
+    public static String[] ScanFriendFile(File scanMe) throws FileNotFoundException {
+        Scanner sc = new Scanner(scanMe);
+        
+
+        
+        
+        int countLines = 0;
+        
+        while (sc.hasNextLine()) {
+        	countLines++;
+            System.out.println(sc.nextLine());
+        }
+        
+        sc.close();
+        
+        String[] names = new String[countLines];
+        return names;
+    }
+    
+    public static void AddFileLinesToArray() {
+    	
+    }
+}

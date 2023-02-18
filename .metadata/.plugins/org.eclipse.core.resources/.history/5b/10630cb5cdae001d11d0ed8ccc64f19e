@@ -1,0 +1,65 @@
+package groupid.artiid;
+
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+
+import org.junit.Test;
+
+/**
+ * Unit test for simple App.
+ */
+
+//examples of unit tests
+//check if the text file exists
+//check if the text file is empty
+
+//check if the contents of the text file can be put into a string array
+//the text file should have one name on each line, so every line should be an entry in the string array
+//so if the text file has only one line, can we consider it a fail? What if someone only has one friend? What if someone has no friends?
+//I'll also add one dummy line, so we can assume a successful test gets at least one line
+//if it does get only one line, check if this line matches the dummy line
+
+
+
+public class AppTest 
+{
+    /**
+     * Rigorous Test :-)
+     * @throws Exception 
+     */
+    @Test
+    public void shouldAnswerWithTrue() throws Exception
+    {
+//    	String hitest = App.sayHi(null);
+//    	
+//    	if(hitest == null) {
+//    		assertTrue(false);
+//    	}
+//    	else {
+//            assertTrue( true );
+//
+//    	}
+    	
+    	
+    	File file = App.FindFriendFile();
+    	
+    	if(file == null) {
+    		//if file is null, test fails
+    		assertTrue(false);
+    	}
+    	else if(App.ScanFriendFile(App.FindFriendFile()) == null) {
+    		//if array of strings is null, test fails
+    		assertTrue(false);
+    	}
+    	else if(App.ScanFriendFile(App.FindFriendFile()).length < 2){
+    		//if array of friends is less than 2, test fails
+    		assertTrue(false);
+    	}
+    	else {
+    		assertTrue(true);
+    	}
+    	
+    	
+    }
+}
