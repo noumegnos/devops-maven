@@ -766,3 +766,8 @@
 2023-03-12 15:44:34,382 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vorgo\eclipse-workspace-new\artiid\src\main\resources
 2023-03-12 15:44:34,384 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-03-12 15:44:34,385 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vorgo\eclipse-workspace-new\artiid\src\test\resources
+2023-03-12 16:40:24,960 [Worker-45: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-12 16:40:24,979 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-12 16:40:24,979 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vorgo\eclipse-workspace-new\artiid\src\main\resources
+2023-03-12 16:40:24,983 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-12 16:40:24,983 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vorgo\eclipse-workspace-new\artiid\src\test\resources

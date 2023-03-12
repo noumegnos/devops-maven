@@ -4,10 +4,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-//Assignment 3: Unit testing
 //this is an example app that simulates fetching a list of facebook friends
 //there is a small text file which the app reads and prints out in the console
-//the objective is to write a series of positive and negative unit tests
+//it also contains a series of positive and negative unit tests
+
+//this is an updated version of assignment#3, maven unit testing
+//I updated the code to ask for a username and to tell the user "hello"
 
 
 public class App 
