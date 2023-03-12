@@ -1322,3 +1322,18 @@ org.eclipse.jgit.errors.TransportException: https://github.com/noumegnos/devops-
 
 !ENTRY org.eclipse.egit.ui 4 0 2023-03-12 15:49:11.271
 !MESSAGE Can't connect to any repository: https://github.com/noumegnos/devops-maven.git (https://github.com/noumegnos/devops-maven.git: not authorized)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-03-12 16:40:24.965
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-03-12 16:43:07.927
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-03-12 16:43:50.190
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-03-12 16:44:20.882
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-03-12 16:44:38.751
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

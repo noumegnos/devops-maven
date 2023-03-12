@@ -19,9 +19,13 @@ public class App
 	
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        //System.out.println( "Hello World!" );
         
-        askName();
+        String name = askName();
+        
+        String hello = sayHi();
+        
+        System.out.println(hello + " " + name);
     }
     
     public static String askName() {
@@ -35,9 +39,9 @@ public class App
         return userName;
     }
     
-    public static String sayHi(String[] args) {
+    public static String sayHi() {
     	
-        System.out.println( "Hi" );
+        //System.out.println( "Hi" );
         
     	return "Hi";
     }
